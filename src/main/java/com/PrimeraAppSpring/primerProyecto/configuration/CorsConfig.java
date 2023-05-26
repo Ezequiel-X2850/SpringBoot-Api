@@ -14,12 +14,12 @@ public class CorsConfig {
       @Override
       public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/login")//Mapeamos la ruta que nos permite logearnos
-                .allowedOrigins("https://protfolio-ef.firebaseapp.com/")
+                .allowedOrigins("https://protfolio-ef.firebaseapp.com")
                 .allowedMethods("*")
                 .exposedHeaders("*");
         
         registry.addMapping("/api/**")//Mapeamos la ruta que nos devuelve un listado de personas
-                .allowedOrigins("https://protfolio-ef.firebaseapp.com/")
+                .allowedOrigins("https://protfolio-ef.firebaseapp.com")
                 .allowedMethods("*");
       }
     };
